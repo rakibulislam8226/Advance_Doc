@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emplyee</title>
+    <title>Students</title>
 </head>
 <body>
-    {% for s in employee %}
-    <p>Employee name: {{s.name}}</p>
-    <p>Room no: {{s.room_no}}</p>
-    <p>Seat No: {{s.seat_no}}</p>
-    <p>Age: {{s.age}}</p> <hr>
-    {% endfor %}
+{% for u in student %}
+    {{u.name}}
+{% endfor %}
     
 </body>
 </html>

@@ -3,9 +3,9 @@ from django.db import models
 
 class StudentManager(models.Manager):
     def get_queryset(self):
-        return super().get_queryset().filter(dept="CSE")
+        return super().get_queryset().filter(dept=1)
     def name_queryset(self):
-        return super().get_queryset().filter(name='Food')
+        return super().get_queryset().filter(name='Omor')
     
     
 class EmployeeManager(models.Manager):
