@@ -1,9 +1,10 @@
+
 from django.shortcuts import render
 from . models import Employee, Student
 # Create your views here.
 
 def StudentView(request):
-    student=Student.cse_students.name_queryset()
+    student=Student.cse_students.get_queryset()
     return render(request,'students.html',{"student":student})
 
 def EmploeeView(request):
