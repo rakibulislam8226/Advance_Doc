@@ -8,6 +8,6 @@ def StudentView(request):
     return render(request,'students.html',{"student":student})
 
 def EmploeeView(request):
-    employee=Employee.all_employees.get_room_then(300) and Employee.all_employees.get_age_query(20)
+    employee=Employee.all_employees.get_room_then(300) and Employee.all_employees.get_age_query(10)
     # employee=Employee.all_employees.get_age_query(21)
     return render(request,'employee.html',{"employee":employee})

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggregation</title>
+</head>
+<body>
+    {% comment %} <div class="container">
+        {% for b in all_book %}
+           Book name: {{b.name}} <br>
+           Total Page: {{b.pages}} <br>
+           Publisher: {{b.publisher}} <br>
+           Authors: {{b.authorall}} <br>
+           Price: {{b.price}} <br>
+           Publish date: {{b.pubdate}} <hr>
+        {% endfor %}
+    </div> {% endcomment %}
+    <div class="">
+        total book: {{total_book}} <br>
+        Sohel's book: {{s_book}} <br>
+        Rating above 5 book: {{above.count}} <br>
+        Rating below 5 book: {{below.count}} <br>
+        Total rating: {{rating_total.rating__sum}} <br>
+        Count: {{pub}} <br>
+        Count no: {{pub.count}} <br>
+        Sum: {{book.price__sum}} <br>
+        Min: {{book.price__min}} <br>
+        Max: {{book.price__max}} <br>
+        Avg: {{book.price__avg}} <hr>  
+    </div>
+    
+</body>
+</html>
