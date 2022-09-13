@@ -27,6 +27,9 @@ urlpatterns = [
 
     path('student/',query_views.StudentView, name='student'),
     path('employee/',query_views.EmploeeView, name='employee'),
+    
     path('aggregation/',include('aggregation.urls')),
+    path('abstraction/',include('model_abstraction.urls')),
+    path('learn_signals/',include('learn_signals.urls')),
     
 ]
