@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'model_abstraction',
     
     'learn_signals',
+
+    'country_city_api',
 ]
 
 MIDDLEWARE = [

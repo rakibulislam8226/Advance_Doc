@@ -31,5 +31,7 @@ urlpatterns = [
     path('aggregation/',include('aggregation.urls')),
     path('abstraction/',include('model_abstraction.urls')),
     path('learn_signals/',include('learn_signals.urls')),
+    path('country_city_api/',include('country_city_api.urls')),
+    
     
 ]
