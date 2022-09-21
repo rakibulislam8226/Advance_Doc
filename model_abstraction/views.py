@@ -8,13 +8,15 @@ from model_abstraction.serializers import (
     )
 from rest_framework import generics
 from model_abstraction import models
-
+# from aggregation.paginator import CustomePagination
+from rest_framework.pagination import PageNumberPagination
 # Create your views here.
 
 # StudentGUB api start #
 class StudentGUBList(generics.ListCreateAPIView):
     queryset = models.StudentGUB.objects.all()
     serializer_class = StudentGUBSerializer
+    pagination_class = PageNumberPagination
 
 
 class StudentGUBDetail(generics.RetrieveUpdateDestroyAPIView):
@@ -62,6 +64,7 @@ class ISBNDetail(generics.RetrieveUpdateDestroyAPIView):
 class PersonList(generics.ListCreateAPIView):
     queryset = models.Person.objects.all()
     serializer_class = PersonSerializer
+    pagination_class = PageNumberPagination
 
 
 class PersonDetail(generics.RetrieveUpdateDestroyAPIView):

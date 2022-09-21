@@ -6,11 +6,16 @@ from django.db.models import Q
 from aggregation.models import Publisher
 from aggregation.serializers import BookSerializer
 from rest_framework import generics
+# from .paginator import CustomePagination
+from rest_framework import pagination
+from rest_framework.pagination import PageNumberPagination
 # Create your views here.
 # rest api start #
 class BookList(generics.ListCreateAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+    pagination_class = PageNumberPagination
+    
 
 
 class BookDetail(generics.RetrieveUpdateDestroyAPIView):
