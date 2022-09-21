@@ -125,10 +125,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 ##rakibkhan
-# REST_FRAMEWORK = {
-#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-#     'PAGE_SIZE': 1
-# }
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 2
+}
 # REST_FRAMEWORK = {
 #     'DEFAULT_PAGINATION_CLASS': 'base.apps.core.pagination.LinkHeaderPagination',
 #     'PAGE_SIZE': 2
