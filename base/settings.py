@@ -34,9 +34,10 @@ INSTALLED_APPS = [
     'drf_yasg',
     
     'model_abstraction',
-    
     'learn_signals',
+    'country_city_api',
     
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -124,10 +125,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 ##rakibkhan
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 1
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+#     'PAGE_SIZE': 1
+# }
 # REST_FRAMEWORK = {
 #     'DEFAULT_PAGINATION_CLASS': 'base.apps.core.pagination.LinkHeaderPagination',
 #     'PAGE_SIZE': 2
