@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'country_city_api',
     
     'django_filters',
+    
+    'social_add_block',
 ]
 
 MIDDLEWARE = [

@@ -32,6 +32,7 @@ urlpatterns = [
     path('abstraction/',include('model_abstraction.urls')),
     path('learn_signals/',include('learn_signals.urls')),
     path('country_city_api/',include('country_city_api.urls')),
+    path('social_add_block/',include('social_add_block.urls')),
     
     
 ]
