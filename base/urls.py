@@ -33,6 +33,7 @@ urlpatterns = [
     path('learn_signals/',include('learn_signals.urls')),
     path('country_city_api/',include('country_city_api.urls')),
     path('social_add_block/',include('social_add_block.urls')),
+    path('model_manager/',include('model_manager.urls')),
     
     
 ]
