@@ -34,6 +34,7 @@ urlpatterns = [
     path('country_city_api/',include('country_city_api.urls')),
     path('social_add_block/',include('social_add_block.urls')),
     path('model_manager/',include('model_manager.urls')),
+    path('forword_reverse_rlt/',include('forword_reverse_rlt.urls')),
     
     
 ]

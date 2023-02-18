@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django_filters',
     
     'social_add_block',
+    'forword_reverse_rlt',
 ]
 
 MIDDLEWARE = [

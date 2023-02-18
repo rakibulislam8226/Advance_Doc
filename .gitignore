@@ -1,0 +1,24 @@
+# Django #
+.idea
+idea
+*.idea/
+*.log
+*.pot
+*.pyc
+__pycache__/
+*.pyc
+*.swp
+
+!.github
+
+**/__pycache__/*
+*.py[cod]
+
+
+# If you are using PyCharm # 
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
